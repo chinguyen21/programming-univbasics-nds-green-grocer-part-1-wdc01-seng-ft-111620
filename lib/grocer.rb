@@ -13,14 +13,8 @@ end
 
 def consolidate_cart(cart)
   new_hash = Hash.new(0)
-  cart.each do |hash|
-    if !array_items.include?(hash[:item]
-      array_items << hash[:item]
-      hash[count] = 0
-      sum_cart << hash
-    else
-      sum_cart 
-    
+  cart.each {|hash| new_hash[hash[:item]] += 1}
+  
     
   # Consult README for inputs and outputs
   #
