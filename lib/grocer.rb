@@ -15,8 +15,12 @@ def consolidate_cart(cart)
   array_items =[]
   sum_cart = 
   cart.each do |hash|
-    array_items << hash[:item]
-    hash
+    if !array_items.include?(hash[:item]
+      array_items << hash[:item]
+      hash[count] = 0
+      sum_cart << hash
+    else
+      sum_cart 
     
     
   # Consult README for inputs and outputs
