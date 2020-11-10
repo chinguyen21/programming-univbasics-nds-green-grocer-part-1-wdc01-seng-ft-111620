@@ -14,7 +14,7 @@ end
 def consolidate_cart(cart)
   new_hash = Hash.new(0)
   cart.each {|hash| new_hash[hash[:item]] += 1}
-  
+  new_hash.uniq.each {|hash| hash[:count] = new_hash[hash[:item]]]
     
   # Consult README for inputs and outputs
   #
