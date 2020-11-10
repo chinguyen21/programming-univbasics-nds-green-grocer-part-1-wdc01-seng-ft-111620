@@ -12,8 +12,7 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  array_items =[]
-  sum_cart = 
+  new_hash = Hash.new(0)
   cart.each do |hash|
     if !array_items.include?(hash[:item]
       array_items << hash[:item]
