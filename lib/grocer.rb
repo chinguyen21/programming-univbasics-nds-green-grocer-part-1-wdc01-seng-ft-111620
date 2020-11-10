@@ -13,8 +13,10 @@ end
 
 def consolidate_cart(cart)
   array_items =[]
+  sum_cart = 
   cart.each do |hash|
     array_items << hash[:item]
+    hash
     
     
   # Consult README for inputs and outputs
